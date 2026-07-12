@@ -24,7 +24,7 @@ interface ConsultaDanfeErro {
 // essa chamada por você e a sirva no mesmo domínio do app. Veja o README para um exemplo.
 const ENDPOINT_CONSULTA = import.meta.env.DEV
   ? '/consultadanfe-api/consulta'
-  : 'https://consultadanfe.com/api/v1/consulta';
+  : '/api/consulta';
 
 // Consulta uma NF-e pela chave de acesso (44 caracteres) e retorna PDF + XML em base64.
 // Doc: https://consultadanfe.com/api#endpoints
