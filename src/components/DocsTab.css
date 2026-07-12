@@ -1,0 +1,5 @@
+.docs-tab__quick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

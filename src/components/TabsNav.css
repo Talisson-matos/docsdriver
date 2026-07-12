@@ -1,0 +1,29 @@
+.tabs-nav {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.tabs-nav__button {
+  flex: 1 1 120px;
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.tabs-nav__button:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.tabs-nav__button--active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}

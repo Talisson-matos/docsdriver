@@ -1,0 +1,44 @@
+.limpar-numero {
+  margin-bottom: 12px;
+}
+
+.limpar-numero__label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.limpar-numero__row {
+  position: relative;
+}
+
+.limpar-numero__input {
+  width: 100%;
+  padding: 9px 90px 9px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 13.5px;
+  font-family: var(--font-mono);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.limpar-numero__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(47, 102, 144, 0.15);
+}
+
+.limpar-numero__copied {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: var(--color-surface);
+  padding-left: 6px;
+}

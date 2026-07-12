@@ -1,0 +1,15 @@
+.sm-tab__gerar-btn {
+  padding: 8px 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: #eaf4ee;
+  color: var(--color-accent);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.sm-tab__gerar-btn:hover {
+  background: var(--color-accent);
+  color: #fff;
+}

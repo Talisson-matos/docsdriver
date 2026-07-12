@@ -1,0 +1,83 @@
+.form-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.form-section__fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+
+.form-section__fields--wide {
+  grid-template-columns: 1fr;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field--readonly .field__input {
+  background: #f0f1f3;
+  color: var(--color-text-muted);
+}
+
+.field__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.field__input,
+.field__textarea {
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 13.5px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  text-transform: uppercase;
+}
+
+.field__textarea {
+  resize: vertical;
+  min-height: 60px;
+  font-family: inherit;
+}
+
+.field__input:focus,
+.field__textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(47, 102, 144, 0.15);
+}
+
+.form-section__copy-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 16px 16px;
+}
+
+.form-section__collapse-bar {
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--color-border);
+  background: #eef0f3;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.form-section__collapse-bar:hover {
+  background: #e2e5ea;
+  color: var(--color-text);
+}
