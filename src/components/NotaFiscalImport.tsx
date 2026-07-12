@@ -62,9 +62,11 @@ const NotaFiscalImport: React.FC<NotaFiscalImportProps> = ({ onXmlImportado }) =
         }
 
         setStatus('sucesso');
+        setValor('');
       } catch (e) {
         setStatus('erro');
         setMensagem(e instanceof Error ? e.message : 'Erro ao importar esta chave.');
+        setValor('');
       }
     };
 

@@ -18,8 +18,10 @@ const LimparNumero: React.FC = () => {
         await navigator.clipboard.writeText(limpo);
         setCopiado(true);
         setTimeout(() => setCopiado(false), 1500);
+        setValor('');
       } catch (err) {
         console.error('Falha ao copiar automaticamente.', err);
+        setValor('');
       }
     }
   };
